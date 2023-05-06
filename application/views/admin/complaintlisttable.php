@@ -1,6 +1,7 @@
 <table id='complaintList' class="table table-striped table-bordered" border="1">
   <thead>
     <tr>
+        <td>Hostel Name</td>
         <td>Complaint No</td>
         <td>Complaint By</td>
         <td>Complaint Status</td>
@@ -27,6 +28,7 @@
             
         ?>
       <tr>
+      <td><?php echo $comp['buildingname']?></td>
         <td> <?php echo $comp['complaintNo']; ?></td>
         <td> <?php echo $comp['name']; ?></td>
         <td><?php echo $status; ?></td>
