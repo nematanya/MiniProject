@@ -155,7 +155,7 @@ class Login extends Public_Controller {
     //unlink(FCPATH.'assets/captch_img/'.$captcha_session_file);
     }
     $config 			= array(
-      //'pool'          =>'0123456789',
+      'pool'          =>'0123456789',
       'img_url' 			=> base_url() . 'assets/captch_img/',
       'img_path' 			=> 'assets/captch_img/',
       'img_width'     => '250',
@@ -273,7 +273,12 @@ class Login extends Public_Controller {
       $data['subject']="Email Verfication";
       $html=$this->load->view('email/sendverification',$data,TRUE);
       $this->emailsend->sendemails($data,$html);
-      redirect('login/emailverification');
+      if($system['emailverification']){
+        redirect('login/emailverification');
+      }else{
+        redirect('login/index');
+      }
+      
     }
   }
 

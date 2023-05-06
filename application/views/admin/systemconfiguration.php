@@ -19,7 +19,7 @@
                 <label for="staticEmail" class="col-sm-2 col-form-label">Email Verification</label>
               <div class="col-sm-10">
                  <div class="form-check form-check-inline">
-                   <input class="form-check-input" name="proxyactive" type="radio" <?php echo ($system['emailverification']==1)?'checked':'' ?> id="inlineCheckbox1" value="1">
+                   <input class="form-check-input" name="emailverification" type="radio" <?php echo ($system['emailverification']==1)?'checked':'' ?> id="inlineCheckbox1" value="1">
                    <label class="form-check-label" for="inlineCheckbox1">Active</label>
                  </div>
                  <div class="form-check form-check-inline">

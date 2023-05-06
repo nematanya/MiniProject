@@ -244,6 +244,8 @@
     function fetchRatings(){
     //setstar();
     var staffid='<?php echo (base64_encode($complaint['assignedTo'])); ?>';
+
+    if(atob(staffid)!=0){
     $.ajax({
                 type: "POST",
                 url: baseurl + "userpanel/getStaffReview",
@@ -262,6 +264,7 @@
                 }
             });
     }
+  }
 
 
 </script>

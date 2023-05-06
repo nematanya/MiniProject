@@ -85,7 +85,7 @@ input[type='password'] {
         <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
             <div class="panel border bg-white">
                 <div class="panel-heading">
-                    <h3 class="pt-3 font-weight-bold">Login</h3>
+                    <h3 class="pt-3 font-weight-bold">User Login</h3>
                 </div>
                 <div class="panel-body p-3">
                   <form method="post" action="<?php echo site_url('login/userauth') ?>" >

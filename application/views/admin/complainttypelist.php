@@ -80,8 +80,8 @@
             <label for="recipient-name" class="col-form-label">Category:</label>
             <select name="category" required class="form-control" id="category">
             <option value=''>Select</option>
-            <option value='0'>Standard</option>
-            <option value='1'>Personal</option>
+            <option value='0'>Not Paid</option>
+            <option value='1'>Paid</option>
             <option value='2'>Custom</option>
             </select>
             <span class="text-danger" id="formerror_category"></span>
